@@ -16,14 +16,14 @@ table, th, td {
 
 th {
     text-align: left;
-    font: 30px sans-serif;
+    font: 15px sans-serif;
     font-weight: bold;
 }
 
 td {
   text-align: center;
-  font-size: 30px;
-  font: 30px sans-serif;
+  font-size: 15px;
+  font: 15px sans-serif;
   background: #FFDE00;
 }
 
