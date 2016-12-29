@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- 
+<link rel="stylesheet" type="text/css" href="https://ssl.gstatic.com/docs/script/css/add-ons1.css">
+-->
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.css">  
+<link rel="stylesheet" type="text/css" href="styles/table.css">
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- <script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.js"></script> -->
+<script src="//d3js.org/d3.v3.min.js"></script>
+ <script src="scripts/viz.js" async></script>
+
+<!-- TODO add manifest here -->
+<link rel="manifest" href="/manifest.json">
+<!-- Add to home screen for Safari on iOS -->
+
+<title>ALL Relations</title>
+
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="header__title">ALL RELATIONS</h1>
+  </header>
+
+<!--  <select name="model" id="markedmodel" onchange="checkdata(this);">
+    <option value="  ">NULL</option>
+    <option value="UTAUT">UTAUT</option>
+    <option value="WIKI">WIKI</option>
+  </select>
+
+-->
+
+  <h2> SEM Paper </h2>
+  <p id="paper"></p>
+  <h2> Percentage of verfied paths </h2>
+  <p id="PercentVerfiedPaths"></p>
+
+  <h2> threshold </h2>
+    <p id="threshold"></p>
+
+  <h2> Verified Paths</h2>
+  <table id="verifiedPathsTable">Verified Paths</table>
+
+  <h2> Falsified Paths</h2>
+  <table id="falsifiedPathsTable">Falsified Paths</table>
+
+  <h2> IRG </h2>
+    <table id="irgSave" class="left display compact" cellpadding="1" width="100%"></table>
+  
+  <h2> tau </h2>
+    <table id="tau" class="display compact" width="100%"></table>
+
+  <h2> Phi(IRG, tau) </h2>
+    <table id="irg" class="display compact" width="100%"></table>
+
+  <h2> Results </h2>
+    <table id="IRGresults" class="display compact" width="100%"></table>
+
+  <script src="scripts/math.js" async></script>
+  <script src="scripts/allrelscomp.js" async></script>
+
+  <h1>Resulting Graph</h2>
+ 
+</body>
