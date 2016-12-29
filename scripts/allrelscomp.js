@@ -323,11 +323,9 @@ $(document).ready(function(){
 	/* 	thus, network complexity resembles the original model */
 	/* 	this could be relaxed to any value */	
 		var t1 = SelectRankElement(irg, TwoDMatrixSum(tau));
-	//	threshold = [t1];
-	//	threshold = [t1 - 0.4, t1 - 0.3, t1 - 0.2, t1 - 0.1, t1 , t1 + 0.1, t1 + 0.2, t1 + 0.3, t1 + 0.4];
-	//	threshold = 0.05;
+		threshold = [t1];
 	
-	threshold = [0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08]
+	//	threshold = [0.01, 0.02, 0.03, 0.04, 0.05, 0.06, 0.07, 0.08]
 	
 	threshold.map(function(thrlem){
 
@@ -389,9 +387,6 @@ $(document).ready(function(){
 				};
 			};
 		};
-
-	
-//var viz2 = visualizeNet();
 
 
 		/* compute exogenous and endogenous nodes */
@@ -460,9 +455,6 @@ $(document).ready(function(){
 
 	
 		var tableresults = makeTable(irgBinary, irgBinary.length, 'IRGresults', structvars);
-
-//		var tableresults = makeTable(IRGresults, IRGresults.length, 'IRGresults', structvars);
-
 
 	});
 

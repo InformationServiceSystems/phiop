@@ -17,7 +17,7 @@ links.forEach(function(link) {
     .links(links)
     .size([width, height])
     .linkDistance(300)
-    .charge(-500)
+    .charge(-600)
     .on("tick", tick)
     .start();
 
@@ -31,7 +31,7 @@ svg.append("defs").selectAll("marker")
   	.enter().append("marker")
     .attr("id", function(d) { return d; })
 	.attr("viewBox", "0 -5 10 10")
-	.attr("refX", 15)
+	.attr("refX", 5)
 	.attr("refY", -1.5)
 	.attr("markerWidth", 6)
 	.attr("markerHeight", 6)
@@ -48,6 +48,7 @@ path = svg.append("g").selectAll("path")
     	.attr("class", function(d) { return "link " + d.type; })
     	.attr("marker-mid", function(d) { return "url(#" + d.type + ")"; });
 
+    
 circle = svg.append("g").selectAll("circle")
 		.data(force.nodes())
 		.enter().append("circle")
