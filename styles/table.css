@@ -1,0 +1,84 @@
+<style>
+
+
+h1{
+  font-size: 30px;
+}
+h2{
+  font-size: 15px;
+}
+p{
+  font-size: 15px;
+}
+table, th, td {
+   border: 1px solid black;
+}
+
+th {
+    text-align: left;
+    font: 15px sans-serif;
+    font-weight: bold;
+}
+
+td {
+  text-align: center;
+  font-size: 15px;
+  font: 15px sans-serif;
+  background: #FFDE00;
+}
+
+.node {
+  cursor: move;
+  fill: #ccc;
+  stroke: #000;
+  stroke-width: 1.5px;
+}
+
+.node.fixed {
+  fill: #f00;
+}
+
+
+.link {
+  fill: none;
+  stroke: #666;
+  stroke-width: 4.0px;
+}
+
+#licensing {
+  fill: green;
+}
+
+.link.licensing {
+  stroke: green;
+}
+
+.link.resolved {
+  stroke-dasharray: 0,2 1;
+}
+
+circle {
+  fill: #fff;
+  stroke: #333;
+  stroke-width: 1.5px;
+  r: 12px;
+}
+
+circle.fixed {
+  fill: #FF0000;
+  stroke: #333;
+  stroke-width: 1.5px;
+}
+
+text {
+  font: 30px serif;
+  pointer-events: none;
+}
+
+rect {
+    width: 100%;
+    height: 100%;
+    fill: #FFDE00;
+}
+
+</style>
