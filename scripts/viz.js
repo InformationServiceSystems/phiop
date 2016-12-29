@@ -46,7 +46,7 @@ path = svg.append("g").selectAll("path")
     	.data(force.links())
   		.enter().append("path")
     	.attr("class", function(d) { return "link " + d.type; })
-    	.attr("marker-end", function(d) { return "url(#" + d.type + ")"; });
+    	.attr("marker-mid", function(d) { return "url(#" + d.type + ")"; });
 
 circle = svg.append("g").selectAll("circle")
 		.data(force.nodes())
